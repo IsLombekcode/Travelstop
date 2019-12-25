@@ -1,0 +1,57 @@
+// COLOR VARIABLES
+$color-primary: #c69963;
+$color-primary-dark: #b28451;
+
+$color-secondary: #101d2c;
+
+$color-grey-light-1: #fff;
+$color-grey-light-2: #aaa;
+
+$color-grey-dark-1: #54483a;
+$color-grey-dark-2: #6d5d4b;
+
+// FONT VARIABLES
+$font-primary: "Nunito", sans-serif;
+$font-display: "Josefin Sans", sans-serif;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: initial;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $font-primary;
+  color: $color-grey-dark-2;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #354052;
+}
+
+// .header,
+// .features,
+// .footer,
+// .gallery,
+// .homes,
+// .navigation,
+// .realtors,
+// .story {
+//   border: none;
+//   border: 5px solid rgb(0, 0, 0);
+// }
+.container {
+  display: grid;
+  grid-template-rows: 12vh 90vh 160vh 130vh 130vh 100vh 100vh 100vh 100vh 100vh;
+
+  & > * {
+    padding: 10px;
+  }
+}
+// grid-template-columns: auto;

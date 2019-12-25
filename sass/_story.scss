@@ -1,0 +1,9 @@
+.story {
+  &__pictures {
+    background-color: $color-grey-light-1;
+  }
+  &__content {
+    display: grid;
+    background-color: $color-grey-light-1;
+  }
+}
