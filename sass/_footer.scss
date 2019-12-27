@@ -1,3 +1,62 @@
 .footer {
-  background-color: $color-grey-light-1;
+  background-color: #fff;
+  display: grid;
+  width: 1230px;
+  justify-self: center;
+  box-sizing: border-box;
+  grid-template-columns: repeat(6, 1fr);
+  box-shadow: 0 -1px 0 0 #dfe3e9;
+  z-index: 100;
+  text-align: center;
+  padding: 70px 120px 120px 120px;
+
+  &__text > p {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+    padding-bottom: 20px;
+  }
+  &__social-links {
+    position: relative;
+  }
+
+  &__link  {
+    list-style: none;
+    text-align: left;
+  }
+  &__link > li > a:link,
+  &__link > li > a:visited {
+    font-size: 16px;
+    color: #354052;
+    text-decoration: none;
+    font-family: $font-display;
+    text-align: center;
+  }
+
+  &__link > li > a:hover,
+  &__link > li > a:active {
+    color: #1686f7;
+  }
+
+&__nav {
+    color: #2ea2f8;
+    display: grid;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    text-align: left;
+}
+&__link > li > a > img{
+  padding-right: 10px;
+}
+
+  &__app {
+    grid-column: 5 / 7;
+  }
+&__end {
+  color: #b0b0b1!important;
+}
+
 }

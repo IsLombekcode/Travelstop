@@ -1,3 +1,212 @@
+.gallery::after {
+  z-index: -99;
+  background-image: url(../img/women.png);
+  display: inline-block;
+  content: "";
+  width: 210px;
+  height: 460px;
+  right: 10px;
+  bottom: 50px;
+  position: absolute;
+  background-size: 100%;
+}
+.gallery::before {
+  z-index: -99;
+  background-image: url(../img/man.png);
+  display: inline-block;
+  content: "";
+  width: 300px;
+  height: 260px;
+  bottom: 150px;
+  left: 0;
+  position: absolute;
+  background-size: 100%;
+}
+
 .gallery {
+  padding: 0;
+  position: relative;
   background-color: $color-grey-light-1;
+  text-align: -webkit-center;
+  z-index: 100;
+  background-image: url(../img/fon.png);
+  background-position: center 50%;
+  background-size: 100% 60%;
+  background-repeat: no-repeat;
+    
+  &__text-1 {
+    font-size: 22px;
+    box-sizing: border-box;
+    padding: 150px 0px 50px 0px;
+  }
+  &__text-2 {
+    color: #b0b0b1;
+    font-size: 16px;
+    line-height: 1.45;
+    padding: 30px 0px 80px 0px;
+  }
+     
+  &__type {
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    border-radius: 5px;
+    justify-self: center;
+    overflow: hidden;
+    box-shadow: 0 12px 24px 0 rgba(52, 63, 80, 0.12);
+    border-color: 5px solid #2a66a1;
+    box-sizing: border-box;
+    // padding: 50px 120px 0px 120px;
+  }
+    
+  &__input {
+    padding: 1.5rem 2rem;
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s;
+    color: inherit;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+
+  }
+  &__button {
+    background-color: #1686f7;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    list-style: none;
+    color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  }
+}
+.limited {
+  display: grid;
+  grid-template-rows: repeat(6, max-content);
+  width: 1230px;
+
+  &__text {
+    box-sizing: border-box;
+    padding: 120px 0px 30px 0px;
+    font-weight: 100;
+    content: "www";
+  }
+
+  &__text-2 {
+    font-size: 18px;
+    line-height: 1.56;
+    padding-bottom: 80px;
+  }
+
+  &__btn {
+    background-color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    color: #1686f7;
+    font-weight: 200;
+    width: max-content;
+    justify-self: center;
+    outline: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 1px;
+    margin-bottom: 35px;
+  }
+  .limeted__text-6 > div > p:before {
+    background: url(iconwhite.png) no-repeat center center;
+    display: block;
+    height: 20px;
+    width: 20px;
+    float: left;
+    transform: translateX(-20px) translateY(1px);
+    background-size: contain;
+    content: "";
+  }
+  .limeted__text-6 {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    color: #fff;
+    font-size: 18px;
+    box-sizing: border-box;
+    padding: 20px 60px 60px;
+  }
+
+  .limeted__text-6 > div > p {
+    text-align: left;
+    transform: translateX(40px);
+  }
+
+  &__box {
+    display: grid;
+    grid-template-rows: repeat(6, max-content);
+    background-color: #a0e9f8;
+    box-sizing: border-box;
+    padding-top: 20px;
+    width: 560px;
+    z-index: -20;
+    border: none;
+    border-radius: 3px;
+  }
+
+  &__box > p:nth-of-type(1) {
+    color: #fff;
+    font-size: 20px;
+    padding: 30px 0px 0px 0px;
+  }
+
+  &__box > p:nth-of-type(2) {
+    color: #fff;
+    font-size: 68px;
+    font-weight: 100;
+    font-family: "Times New Roman", Times, serif;
+  }
+  &__box > p:nth-of-type(3) {
+    color: #fff;
+    font-size: 20px;
+    box-sizing: border-box;
+    padding: 10px 0px 40px 0px;
+  }
+  &__box-2 {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__box-2::before {
+    content: "";
+    position: absolute;
+    width: 150%;
+    height: 100%;
+    background-color: #1686f7;
+    transform: translateX(-50%);
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    z-index: -10;
+  }
+  &__box-2 > p:nth-of-type(1) {
+    color: #fff;
+    font-size: 20px;
+    padding-top: 35px;
+    font-weight: bold;
+  }
+&__send {
+  position: relative;
+}
+  &__send::before {
+    position: absolute;
+    opacity: 0.65;
+    display: block;
+    line-height: 1;
+    height: 1em;
+    width: 1.5em;
+    left: 50%;
+    top: 50%;
+    transform: rotate(-25deg) translate(-35%, -35%);
+    border-top: 5px solid #1686f7;
+    content: "";
+
+  }
+
+
 }

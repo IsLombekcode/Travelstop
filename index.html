@@ -6,51 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" type="image/jpg" href="img/logo-2.png">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/ionicons.min.css">
+
     <title>
         Business travel, expense reporting, and insights | Travelstop
     </title>
 </head>
 
 <body class="container">
-    <div class="navigation">
-        <ul class="navigation__nav">
-            <img src="img/logo.svg" alt="Travelstop logo" class="navigation__logo">
-            <li class="navigation__item-1"><a href="#" class="navigation__link">Features</a></li>
-            <li class="navigation__item-2"><a href="#" class="navigation__link">Pricing</a></li>
-            <li class="navigation__item-3"><a href="#" class="navigation__link">Sign in</a></li>
-         
-                <select class="navigation__language">
-                    <option value="English"selected>English</option>
-                    <option value="Bahasa Indonesia"> Bahasa Indonesia</option>
-                    <option value="日本語">日本語</option>
-                    <option value="한국어">한국어</option>
-                    <option value="ภาษาไทย">ภาษาไทย</option>
-                    <option value="ภาษาไทย">ภาษาไทย</option>
-                    <option value="简体中文">简体中文</option>
-                    <option value="繁體中文">繁體中文</option>
-                </select>
-            
-                 <div class="form">
-                <input type="email" autocomplete="on" placeholder="Add your work email" required="required"
-                    class="navigation__input">
-                <button type="submit" class="navigation__button">
-                    Get started
-                </button>
-            </div>
+    <div class="nav-fixed">
+        <div class="navigation">
+            <ul class="navigation__nav">
+                <img src="img/logo.svg" alt="Travelstop logo" class="navigation__logo">
+                <li class="navigation__item-1"><a href="#" class="navigation__link">Features</a></li>
+                <li class="navigation__item-2"><a href="#" class="navigation__link">Pricing</a></li>
+                <li class="navigation__item-3"><a href="#" class="navigation__link">Sign in</a></li>
+
+                <div class="navigation__language" tabindex="0">
+                    <div class="long navigation__lang">
+                        <p value="English" selected></p>
+                        <p value="Bahasa Indonesia"> Bahasa Indonesia</p>
+                        <p value="日本語">日本語</p>
+                        <p value="한국어">한국어</p>
+                        <p value="ภาษาไทย">ภาษาไทย</p>
+                        <p value="ภาษาไทย">ภาษาไทย</p>
+                        <p value="简体中文">简体中文</p>
+                        <p value="繁體中文">繁體中文</p>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <input type="email" autocomplete="on" placeholder="Add your work email" required="required"
+                        class="navigation__input">
+                    <button type="submit" class="navigation__button">
+                        Get started
+                    </button>
+                </div>
+            </ul>
+        </div>
     </div>
-    </div>
-    </ul>
-    </div>
+    <div class="space-90"></div>
     <header class="header">
         <div class="header__text">
             <h1 class="heading-1">Simplify your business travel</h1>
-            <p class="header__text">We make it easy to manage your business trips, automate your expense reporting
+            <p class="header__box">We make it easy to manage your business trips, automate your expense reporting
                 and provide meaningful insights.</p>
             <div class="header__type">
                 <input type="email" autocomplete="on" placeholder="Add your work email" required="required"
                     class="header__input">
                 <button type="submit" class="header__button">
-                    Get started
+                    Get started—it’s free
                 </button>
             </div>
             <p class="header__texts">No credit card required. Cancel any time.</p>
@@ -60,46 +67,200 @@
         </div>
     </header>
 
-
-    <section class="features">
-        <div>
-        <h2 class="heading-2">A modern solution for business travel</h2>
-        <p class="features__text">We’ve reimagined what a business travel management tool
-            should be—and it’s more than just travel.</p>
+    <div class="relat">
+        <div class="blueback">
         </div>
-        <div>           
-        <img src="img/travel.png" alt="trevel" class="features__img">
-        </div>
-<div class="box">
-<p class="features__text-1">Easy tools to simplify your travel booking process</p>
-<p class="features__text-2">Automated expense reporting to improve productivity</p>
-<p class="features__text-3">Data-driven insights for better visibility</p>
-</div>
+        <section class="features">
+            <div>
+                <h2 class="heading-2">A modern solution for business travel</h2>
+                <p class="features__text">We’ve reimagined what a business travel management tool
+                    should be—and it’s<br>more than just travel.</p>
+            </div>
+            <div>
+                <img src="img/travel.png" alt="trevel" class="features__img">
+            </div>
+            <div class="box">
+                <p class="features__text-1">Easy tools to simplify your travel booking process</p>
+                <p class="features__text-2">Automated expense reporting to improve productivity</p>
+                <p class="features__text-3">Data-driven insights for better visibility</p>
+            </div>
 
-    </section>
-    <div class="story__pictures">
-        pictures
+        </section>
+    </div>
+    <div class="story">
+        <div class="story__box-1">
+            <img class="story__img" src="img/realtor-1.png" alt="realtor">
+            <h2 class="heading-3">For business travellers</h2>
+
+            <div>
+                <h1 id="image-1">Book travel in minutes</h1>
+                <p class="story__text-1">Book your flights and hotels in a few clicks.<br>No more back and forth with
+                    travel agents.</p>
+            </div>
+            <div>
+                <h1>Expense on-the-go</h1>
+                <p class="story__text-1">Snap and attach receipts in seconds. No need to deal with paper receipts and
+                    spreadsheets anymore.
+                </p>
+            </div>
+            <div>
+                <h1>Freedom of choice</h1>
+                <p class="story__text-1">Flexibility to travel the way you like. With flexible budget approvals, you
+                    don’t worry about travel
+                    policies</p>
+            </div>
+        </div>
+        <div class="story__box-2">
+
+            <img class="story__img" src="img/realtor-2.png" alt="realtor">
+            <h2 class="heading-3">For business owners</h2>
+            <div>
+                <h1>All in one place</h1>
+                <p class="story__text-1">Get all travel and expense data in one place. Know where your travellers are
+                    with
+                    complete visibility of
+                    all bookings and expenses.</p>
+            </div>
+            <div>
+                <h1>Data-driven insights</h1>
+                <p class="story__text-1">Stay in control by tracking your expenses at department or an individual level.
+                </p>
+            </div>
+            <div>
+                <h1>Improve productivity</h1>
+                <p class="story__text-1">Improve employee productivity by providing tools that simplify, automate and
+                    modernise the business
+                    travel experience.</p>
+            </div>
+        </div>
+    </div>
+    <div class="relat-2">
+        <div class="blueback-2">
+        </div>
+        <div class="story__content">
+
+            <h2 class="heading-2">Instead of spending hours doing travel research…</h2>
+            <p class="story__text-2"><span class="story__textcolor">Travelstop lets you book your flights and hotels in
+                    minutes.</span>You can even get a
+                pre-approved budget for your trip so that you can customise it as you like. Travel smarter.</p>
+            <img src="img/research.png" alt="research" class="story__img-1">
+        </div>
     </div>
 
-    <div class="storya__content">
-        story content
-    </div>
     <div class="realtors">
-
-
-
+        <div>
+            <h2 class="heading-2 heading-2-last">Instead of grappling with paper receipts…</h2>
+            <p class="realtors__text"><span class="realtors__textcolor">"Travelstop automates expense reporting for
+                    you.</span>Just scan your receipts on-the-go and
+                submit your expense report when you’re ready. Skip the busywork.
+            </p>
+        </div>
+        <div class="realtors__imgbox">
+            <img src="img/receipts.png" alt="receipts" class="realtors__img">
+            <img src="img/phone.png" alt="phone" class="realtors__img-1">
+        </div>
     </div>
-    <section class="homes">
-        homes
-    </section>
+    <div class="relat-2">
+        <div class="blueback-2">
+        </div>
+        <section class="homes">
+            <div>
+                <h3 class="heading-3">Instead of having no visibility on your spend…</h3>
+                <p class="homes__text"><span class="homes__textcolor">Travelstop gives a real-time view of travel and
+                        expense spending.</span>You get
+                    organisation-wide data to make those cost-saving decisions. Get actionable insights.
+                </p>
+            </div>
+            <img src="img/coming soon.png" alt="coming soon" class="homes__img">
+            <button class="homes__btn">Coming soon</button>
+        </section>
+    </div>
 
     <section class="gallery">
-        gallery
-    </section>
+        <div class="limited">
+            <h2 class="limited__text">Travel. Expenses. Insights.</h2>
+            <p class="limited__text-2">Perfectly integrated for a seamless experience.</p>
+            <div class="limited__box">
+                <p>We offer simple and affordable pricing</p>
+                <p class="limited__send">$10</p>
+                <p>per active user per month</p>
+                <a class="limited__btn" href="#">Free for a limited period</a>
+                <div class="limited__box-2">
+                    <p>What’s included?</p>
+                    <div class="limeted__text-6">
+                        <div>
+                            <p>Travel management</p>
+                            <p>Expense management</p>
+                            <p>Data and insights</p>
+                        </div>
+                        <div>
+                            <p>No usage limits</p>
+                            <p>No long-term contracts</p>
+                            <p>No hidden fees</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="gallery__text-1">Easy setup. Be up and running in minutes.</p>
+            <div class="gallery__type">
+                <input type="email" autocomplete="on" placeholder="Add your work email" required="required"
+                    class="gallery__input">
+                <button type="submit" class="gallery__button">
+                    Get started—it’s free
+                </button>
+            </div>
+            <p class="gallery__text-2">No credit card required. Cancel any time.</p>
 
+    </section>
+    <!-- <hr> -->
     <footer class="footer">
-        footer
+
+        <img src="img/logo-2.svg" alt="logo">
+
+        <ul class="footer__text">
+            <p>Travelstop</p>
+            <div class="footer__link">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Download app</a></li>
+            </div>
+        </ul>
+
+        <ul class="footer__text">
+            <p>Resources</p>
+            <div class="footer__link">
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Security</a></li>
+            </div>
+        </ul>
+
+        <ul class="footer__text">
+            <p>Features</p>
+            <div class="footer__link">
+                <li><a href="#">Travel</a></li>
+                <li><a href="#">Expenses</a></li>
+            </div>
+        </ul>
+        <ul class="footer__text">
+            <a href="#" class="footer__nav">We’re hiring!</a>
+            <div class="footer__link">
+                <li class="footer__social"> <a href="#"> <img src="img/facebook.svg" alt="facebook">Facebook</a></li>
+                <li class="footer__social"> <a href="#"> <img src="img/twitter.svg" alt="twitter"> Twitter</a></li>
+                <li class="footer__social"> <a href="#"> <img src="img/medium.svg" alt="medium">Medium</a></li>
+
+            </div>
+        </ul>
+        <div class="footer__app">
+            <img src="img/appstore.svg" alt="appstore">
+            <img src="img/googleplay.svg" alt="googleplay">
+            <p class="footer__end">© 2019 Travelstop · Made in Singapore</p>
+        </div>
     </footer>
+
 </body>
 
 

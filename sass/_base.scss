@@ -11,8 +11,8 @@ $color-grey-dark-1: #54483a;
 $color-grey-dark-2: #6d5d4b;
 
 // FONT VARIABLES
-$font-primary: "Nunito", sans-serif;
-$font-display: "Josefin Sans", sans-serif;
+$font-primary: "Source Sans Pro", sans-serif;
+$font-display: "Source Sans Pro", sans-serif;
 
 *,
 *::before,
@@ -44,11 +44,10 @@ body {
 // .realtors,
 // .story {
 //   border: none;
-//   border: 5px solid rgb(0, 0, 0);
 // }
 .container {
   display: grid;
-  grid-template-rows: 12vh 90vh 160vh 130vh 130vh 100vh 100vh 100vh 100vh 100vh;
+  grid-template-rows: 70px repeat(8, max-content);
 
   & > * {
     padding: 10px;

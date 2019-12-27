@@ -5,43 +5,33 @@
 .heading-1 {
   display: grid;
   color: #0091ff;
-  line-height: normal;
+  line-height: 70px;
   font-size: 54px;
   margin-top: 0;
-  margin-bottom: 20px;
-
   word-spacing: 4px;
   letter-spacing: 1px;
+  font-weight: 600;
 }
 
-.heading-2 {
-  font-size: calc(2.84091vw + 18.90909px);
-  font-weight: 900;
+.heading-2,
+.heading-3 {
+  font-size: 36px;
+  font-weight: normal;
   line-height: 1.25;
-  margin-bottom: 32px
-
+  margin-bottom: 50px;
+  color: #354052;
+  text-align: center;
 }
 
-h2 {
-  @extend %heading;
-  display: inline-block;
+
+
+h2,
+h3 {
+  // @extend %heading;
+  // display: inline-block;
   margin-top: 0;
   color: $color-secondary;
   font-size: 42px;
   line-height: 53px;
   font-weight: 500;
-}
-
-.heading-3 {
-  display: block;
-  color: $color-grey-light-1;
-  font-size: 58px;
-  line-height: 64px;
-  font-weight: 500;
-  letter-spacing: 0;
-  padding: 20px;
-
-  @media only screen and (max-width: 767px) {
-    display: none;
-  }
 }
